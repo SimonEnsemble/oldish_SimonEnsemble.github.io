@@ -1,9 +1,10 @@
 title: The Simon Ensemble
 author: The Simon Ensemble
-subtitle: We dig research.
+subtitle: 
 
  # url: "https://www.pro-panda.tech"
-url: http://localhost:4000
+# url: http://localhost:4000
+url: http://simonensemble.github.io
 baseurl: ""
 
 footer_url: "https://simonensemble.github.io"
