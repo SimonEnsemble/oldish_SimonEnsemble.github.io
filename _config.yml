@@ -1,0 +1,35 @@
+title: The Simon Ensemble
+author: The Simon Ensemble
+subtitle: We dig research.
+
+ # url: "https://www.pro-panda.tech"
+url: http://localhost:4000
+baseurl: ""
+
+footer_url: "https://simonensemble.github.io"
+footer_text: "The Simon Ensemble"
+
+profile-picture: cage_8.jpg
+favicon_location: assets/favicon.ico
+
+permalink: /:year-:month-:day-:title/
+sass:
+    style: compressed
+    sass_dir: css
+
+plugins:
+  - jemoji
+
+navbar:
+ - name: "people"
+   link: "ppl"
+ - name: "publications"
+   link: "pubs"
+ - name: "software"
+   link: "software"
+ - name: "teaching"
+   link: "teaching"
+ - name: "join"
+   link: "join"
+ - name: "blog"
+   link: "blog"
