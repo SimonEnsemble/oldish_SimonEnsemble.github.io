@@ -9,7 +9,7 @@ author: Cory Simon
 In our research group, we write our codes to conduct molecular simulations in the Julia programming language. We choose Julia because it is a high-level, dynamic language, but, owing to its design and just-in-time compiler, Julia approaches the speed of C. Compared to writing code in C, Julia enables us to write similarly fast code with fewer lines and lower complexity.
 
 In this post, we give examples to show two powerful features of Julia: hierarchical data types and multiple dispatch.
-Let's use wine as an example. :wine_glass:
+Let's use wine as an example.
 
 # Hierarchical data types
 

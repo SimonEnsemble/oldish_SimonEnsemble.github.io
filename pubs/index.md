@@ -6,10 +6,10 @@ layout: default
 #left {
   width: 150px;
   float: left;
-  padding-right: 30px;
+  padding-right: 0px;
 }
 #right {
-  margin-left: 200px;
+  margin-left: 175px;
   /* Change this to whatever the width of your left column is*/
 }
 .clear {
@@ -18,10 +18,10 @@ layout: default
 </style>
 
 <center>
-    <img style="width:100px;" src="images/cover_1.png" alt="">
-    <img style="width:100px;" src="images/cover_2.png" alt="">
-    <img style="width:100px;" src="images/cover_3.png" alt="">
-    <img style="width:100px;" src="images/cover_4.png" alt="">
+    <img style="width:150px;" src="images/cover_1.png" alt="">
+    <img style="width:150px;" src="images/cover_2.png" alt="">
+    <img style="width:150px;" src="images/cover_3.png" alt="">
+    <img style="width:150px;" src="images/cover_4.png" alt="">
 </center>
 
 <a href ="https://scholar.google.com/citations?user=eoR8MNMAAAAJ&hl=en`">Google Scholar</a>

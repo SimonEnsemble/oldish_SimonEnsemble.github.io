@@ -4,7 +4,7 @@ layout: default
 
 <figure>
 	<center>
-	<img src="https://raw.githubusercontent.com/SimonEnsemble/PorousMaterials.jl/master/PMlogo.png" alt="PorousMaterials.jl logo" style="width:604px">
+	<img src="https://raw.githubusercontent.com/SimonEnsemble/PorousMaterials.jl/master/PMlogo.png" alt="PorousMaterials.jl logo" style="width:304px">
 	</center>
 </figure>
 
@@ -14,7 +14,7 @@ Github page: [github.com/SimonEnsemble/PorousMaterials.jl](https://github.com/Si
 
 <figure>
 	<center>
-	<img src="../images/pyIAST_logo_resolute.png" alt="pyIAST logo" style="width:304px">
+	<img src="../images/pyIAST_logo_resolute.png" alt="pyIAST logo" style="width:250px">
 	</center>
 </figure>
 

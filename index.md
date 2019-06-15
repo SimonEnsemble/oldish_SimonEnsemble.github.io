@@ -20,4 +20,4 @@ layout: default
 
 We leverage machine learning, statistical mechanics, mathematical modeling, and molecular simulations to accelerate the discovery and deployment of nano-porous materials for gas storage, separations, and sensing. Our efforts directly contribute to the development of novel materials and technologies, the generation of cheaper and cleaner energy, and the enhancement of national security.
 
-<p align="center"><iframe src="nisif6.html" width="400px" height="400 px" align="middle"></iframe></p>
+<p align="center"><iframe src="nisif6.html" width="375px" height="375 px" align="middle"></iframe></p>
