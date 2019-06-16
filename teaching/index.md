@@ -12,4 +12,3 @@ Data Science for Engineers, Fall 2019.
 
 # teaching philosophy
 I describe my teaching philosophy in [this essay](teaching_philosophy.pdf).
-
