@@ -1,8 +1,21 @@
+
+- name: Melanie Huynh
+  major: Biological Engineering
+  about: I enjoy digital and traditional art and electronic music composition.
+  research: computational modeling and simulation of gas adsorption in MOFs
+  foto: photos/Melanie.png
+
 - name: Mira Khare
   about: 
   major: Chemical Engineering
   research: using machine learning to extract biological insights from large genomic data sets
   foto: photos/MiraKhare.jpg
+
+- name: Grant McConachie
+  about: I enjoy playing guitar and making music in my free time.
+  major: Bioengineering
+  research: using machine learning to predict adsorption properties of MOFs
+  foto: photos/grant.jpeg
 
 - name: Rachel Sousa
   major: Mathematics
@@ -15,9 +28,3 @@
   about: My favorite TV show is Battlestar Galactica, and my favorite board game is Hansa Teutonica.
   research: molecular simulations in flexible, nanoporous materials; software development
   foto: photos/ArthurHenryYork.JPG
-
-- name: Melanie Huynh
-  major: Biological Engineering
-  about: I enjoy digital and traditional art and electronic music composition.
-  research: computational modeling and simulation of gas adsorption in MOFs
-  foto: photos/Melanie.png
