@@ -25,6 +25,8 @@ Since 2017, Cory is an assistant professor at Oregon State University in the Sch
 
 *Kelley Engineering Center 2045*
 
+*Twitter:* [@CoryMSimon](https://twitter.com/CoryMSimon?lang=en)
+
 # the phd students
 
 {% for phd in site.data.phds %}
@@ -48,4 +50,10 @@ Since 2017, Cory is an assistant professor at Oregon State University in the Sch
 
 <hr>
 
+{% endfor %}
+
+# collaborators
+
+{% for collab in site.data.collabs%}
+{{ collab.name }}. *{{ collab.org }}*. <a href="{{ collab.web }}">website</a>.
 {% endfor %}
