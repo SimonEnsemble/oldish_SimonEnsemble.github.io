@@ -2,9 +2,9 @@ title: The Simon Ensemble
 author: The Simon Ensemble
 subtitle: 
 
- # url: "https://www.pro-panda.tech"
+# for serving locally
 # url: http://localhost:4000
-url: http://simonensemble.github.io
+url: https://simonensemble.github.io
 baseurl: ""
 
 footer_url: "https://simonensemble.github.io"
