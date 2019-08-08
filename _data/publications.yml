@@ -16,7 +16,8 @@
   authors: A. Sturluson, M. T. Huynh, A. Kaija, C. Laird, S. Yoon, F. Hou, Z. Feng, C. Wilmer, Y. Colon, Y. Chung, D. Siderius, C. Simon
   journal: Molecular Simulation 
   date: 2019
-  url: https://chemrxiv.org/articles/The_Role_of_Molecular_Modeling_Simulation_in_the_Discovery_and_Deployment_of_Metal-Organic_Frameworks_for_Gas_Storage_and_Separation/7854980
+  url: https://www.tandfonline.com/doi/full/10.1080/08927022.2019.1648809
+  other: <a href="https://chemrxiv.org/articles/The_Role_of_Molecular_Modeling_Simulation_in_the_Discovery_and_Deployment_of_Metal-Organic_Frameworks_for_Gas_Storage_and_Separation/7854980">Preprint.</a>
   image: images/MOF_schematic_not_pillared.png
 
 - title: Eigencages&#58; Learning a latent space of porous cage molecules
