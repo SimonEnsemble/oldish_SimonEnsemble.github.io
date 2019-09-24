@@ -37,6 +37,8 @@ Since 2017, Cory is an assistant professor at Oregon State University in the Sch
 
 *research interests:* {{ phd.research }}
 
+<hr>
+
 {% endfor %}
 
 # the undergrad students
