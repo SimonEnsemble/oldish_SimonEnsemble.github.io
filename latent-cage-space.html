@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Latent Cage Space</title>
+	<script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+
+	<style>
+		.axis{
+			font: 10px sans-serif;
+		}
+
+		.axis path,
+		.axis line{
+			fill: none;
+			stroke: #000;
+			sharp-rendering:crispEdges;
+		}
+
+		circle:hover{
+			fill: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- Location for page elements. -->
+	<script>
+		// Our D3 code will go here.
+
+		// Dynamic Data loaded from CSV
+		var mofData = [];
+
+		d3.csv("/assets/latent_dim.csv", function(d){
+			return{
+				cage_image : d.cage_image,
+				x : +d.x1,
+				y : +d.x2
+			};
+		}, function(error, rows){
+			mofData = rows;
+			//console.log(mofData);
+			createVisualization();
+		})
+
+		function createVisualization(){
+
+			// Set dimensions for the image
+			var w = 700;
+			var h = 700;
+			var padding = 70;
+			var image_size = 250;
+
+			// Create the SVG
+			var svg = d3.select("body")
+				.append("svg")
+				.attr("width", w)
+				.attr("height", h)
+				;
+
+			// Various information about the input data so it will scale accordingly
+			var arrayLength = mofData.length;
+			var xMax = d3.max(mofData, function(d) { return d.x; });
+			var xMin = d3.min(mofData, function(d) { return d.x; });
+			var yMax = d3.max(mofData, function(d) { return d.y; });
+			var yMin = d3.min(mofData, function(d) { return d.y; });
+			var max = xMax > yMax ? xMax : yMax; // make one max variable so both axes are on same scale
+			var min = xMin < yMin ? xMin : yMin; // make one min variable so both axes are on same scale
+
+			// Creating scales so all data will fit in the graph
+			var xScale = d3.scaleLinear()
+				.domain([min, max]) // the input domain
+				.range([padding, w - padding]) // the output range
+				;
+
+			var yScale = d3.scaleLinear()
+				.domain([min, max]) // the input domain
+				.range([h - padding, padding]) // the output range, flipping the order so
+											   // that high values are on top
+				;
+
+			// Adding axes
+			var xAxis = d3.axisBottom(xScale)
+				.ticks(5)
+				;
+
+			var yAxis = d3.axisLeft(yScale)
+				.ticks(5)
+				;
+
+			// Appending the axes (placing them on) SVG
+			svg.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(0," + (h - padding) + ")")
+				.call(xAxis)
+				;
+
+			svg.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(" + padding + ", 0)")
+				.call(yAxis)
+				;
+
+			// Label the Axes
+			svg.append("text")
+				.attr("class", "y label")
+				.attr("text-anchor", "middle")
+				.text("Latent Dimension 2")
+				.attr("transform", "translate(10, " + (h / 2) + ") rotate (-90)")
+				.attr("font-size", "14")
+				.attr("font-family", "'Open Sans', sans-serif");
+
+			svg.append("text")
+				.attr("class", "x label")
+				.attr("text-anchor", "middle")
+				.text("Latent Dimension 1")
+				.attr("transform", "translate(" + (w / 2) + ", " + (h - 10) + ")")
+				.attr("font-size", "14")
+				.attr("font-family", "'Open Sans', sans-serif");
+
+			// Title
+			svg.append("text")
+				.attr("class", "Title")
+				.attr("text-anchor", "middle")
+				.text("Latent Cage Space")
+				.attr("transform", "translate(" + (w / 2) + ", " + (0.5 * padding) + ")")
+				.attr("font-size", "20")
+				.attr("font-family", "'Open Sans', sans-serif");
+
+			// Create circles from mofData
+			svg.selectAll("circle")
+				.data(mofData)
+				.enter()
+				.append("circle")
+				.attr("cx", function(d){
+					return xScale(d.x);
+				})
+				.attr("cy", function(d){
+					return yScale(d.y);
+				})
+				.attr("r", 5)
+				.attr("fill", "steelblue")
+				.on("mouseover", function(d){
+	                //tooltip.html(string); //this will add the image on mouseover
+					tooltip.style("visibility", "visible").text((d.cage_image).substring(0, (d.cage_image).indexOf("_no_box.png")));
+					tooltip2.style("visibility", "visible");
+				})
+				.on("mousemove", function(d){
+	                var string = "<img src=/images/all_cages/" + d.cage_image + " style='height: " + image_size + "px; width: " + image_size + "px; object-fit: contain'>";
+					// this will add the image and text on mouseover
+					return {
+						text : tooltip.text((d.cage_image).substring(0, (d.cage_image).indexOf("_no_box.png")))
+							.style("left",(d3.event.pageX + (d3.event.pageX > w / 2 ? -(40 + 50) : 40))+"px")
+							.style("top", (d3.event.pageY + (d3.event.pageY > h / 2 ? -(10 + 10) : 00))+"px"),
+						image : tooltip2.html(string)
+							.style("left", (d3.event.pageX + (d3.event.pageX > w / 2 ? -(10 + image_size) : 10)) + "px")
+							.style("top", (d3.event.pageY + (d3.event.pageY > h / 2 ? -(20 + image_size) : 20)) + "px")
+							.style("font-color", "white")
+							.transition()
+							.style("opacity", 0.9),
+					};
+				})
+				.on("mouseout", function(d){
+					tooltip.style("visibility", "hidden");
+					tooltip2.style("visibility", "hidden");
+				})
+				;
+
+			// text
+			var tooltip = d3.select("body")
+				.append("div")
+				.style("position", "absolute")
+				.style("font-size", "14px")
+				.style("z-index", "10")
+				.style("visibility", "hidden")
+				;
+			// image
+			var tooltip2 = d3.select("body")
+				.append("div")
+				.attr("width", 50 + 'px')
+				.attr("width", 50 + 'px')
+				.style("position", "absolute")
+				.style("font-size", "10px")
+				.style("z-index", "10")
+				.style("visibility", "hidden")
+				;
+		};
+	</script>
+</body>
+</html>
