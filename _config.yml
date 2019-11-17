@@ -32,5 +32,7 @@ navbar:
    link: "teaching"
  - name: "join"
    link: "join"
+ - name: "news"
+   link: "newz"
  - name: "blog"
    link: "blog"
