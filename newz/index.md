@@ -19,5 +19,4 @@ Melanie was awarded the Donald F. Othmer Sophomore Academic Excellence Award fro
 
 # an article about Rachel in iMPACT
 
-A very nice article about Rachel in [this iMPACT article](http://impact.oregonstate.edu/2019/10/using-mathematical-biology-to-explore-everything-from-ecological-phenomenon-to-cancer-cells/).
-
+A very nice article about Rachel in [iMPACT](http://impact.oregonstate.edu/2019/10/using-mathematical-biology-to-explore-everything-from-ecological-phenomenon-to-cancer-cells/).
