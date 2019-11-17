@@ -2,6 +2,7 @@
 layout: post
 title: the German tank problem
 tags: [statistics, probability, combinatorics, estimation]
+comments: true
 snippet: The simplified German tank problem is as follows. During World War 2, the Germans labeled their tanks with sequential serial numbers. The Allied forces used the serial numbers on a captured subset of the German tanks (data!) to estimate the total number of tanks the Germans had.
 author: Cory Simon
 ---

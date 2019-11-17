@@ -18,3 +18,7 @@ layout: default
 <br>
 <strong>{{page.author}}.</strong>
 {{content}}
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
