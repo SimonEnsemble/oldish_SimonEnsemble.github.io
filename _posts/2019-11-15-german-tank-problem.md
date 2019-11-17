@@ -16,22 +16,22 @@ The Allies captured a (assumed) random sample of $k$ tanks from the German force
 {:.centerr}
 <figure>
     <img src="/images/german_tank_problem/sample.png" alt="image" style="width: 75%;">
-    <figcaption>An outcome of a random sample (without replacement) of German tanks, serial numbers inscribed. Based on this observation, how many tanks do you estimate the Germans have?</figcaption>
+    <figcaption>A random sample (without replacement) of German tanks and their inscribed serial numbers. Based on this outcome, how many tanks do you estimate the Germans have?</figcaption>
 </figure>
 
 The number of tanks is of course greater than or equal to the maximum serial number observed: $n \geq \max x_i$. Given the sample above, estimating that the Germans have fewer than 156 tanks would be absurd. However, estimating that the Germans have 156 tanks seems too conservative; this estimate assumes that we happened to capture the most recently manufactured tank. Intuitively, we should estimate the total number of tanks to be 156 *plus some number* to reflect the small likelihood that we captured the very last tank to come out of the factory (as opposed to not capturing it). How large should this number be?
 
-Let's delve into the math to answer this question, but feel free to skip to `# an unbiased estimator` if you want to know right away.
+Let's now delve into the math to answer this question, but feel free to skip to `# an unbiased estimator`.
 
 # the data generating process (dgp)
 
-We are collecting a random sample from a population (the tanks) and making an observation about the members of the sample (the serial numbers = the data). Think of tank capturing as a stochastic process governed by an underlying data generating process (dgp). The data here are the set of serial numbers $$\{x_1,x_2,...,x_k\}$$.
+Think of tank capturing as a stochastic process governed by an underlying data generating process (dgp). The data here are the set of serial numbers $$\{x_1,x_2,...,x_k\}$$. The data generating process here is a uniform random selection without replacement from the set of integers $$\{1,2,...,n\}$$. This is just an approximate model for how tank capturing happens.
 
-Our stochastic model for tank capturing-- the dgp-- is a uniform random selection without replacement from the set of integers $$\{1,2,...,n\}$$. Because all viable outcomes (sets of observed serial numbers) are equally probable, the probability of any particular viable outcome, given we know $n$, is:
+Because all viable outcomes (sets of observed serial numbers) are equally probable, the probability of any particular viable outcome, given we know $n$, is:
 
 $$P(\{x_1, x_2, ..., x_k\} | n)=\dfrac{1}{\binom{n}{k}}$$
 
-A viable outcome is one where $$x_i \in \{1, 2, ..., n\}$$ for all $$i\in \{1,2,...,k\}$$. So our dgp is governed by the probability distribution above, which is a uniform distribution over the sample space. The denominator is the cardinality of the sample space-- how many ways we can select $k$ integers from $n$ without replacement, where the order in which they were selected does not matter.
+A viable outcome is one where $$x_i \in \{1, 2, ..., n\}$$ for all $$i\in \{1,2,...,k\}$$. So our dgp is governed by the probability distribution above, which is a uniform distribution over the sample space. The denominator is the cardinality of the sample space-- how many ways we can select $k$ integers from $n$ without replacement, where the order in which they were selected is irrelevant.
 
 # simulating the German tank problem in Julia
 
@@ -45,7 +45,7 @@ end
 tank = Tank(4) # construct tank with serial number 4.
 ```
 
-The following function uses the `sample` function in `StatsBase.jl` to simulate tank capture.
+The following function uses the `sample` function in `StatsBase.jl` to simulate tank capture. It returns an array of `Tank`s that were captured.
 
 ```julia
 function capture_tanks(nb_tanks_captured::Int, nb_tanks::Int)
@@ -55,7 +55,7 @@ function capture_tanks(nb_tanks_captured::Int, nb_tanks::Int)
     return [Tank(serial_no) for serial_no in serial_nos]
 end
 
-captured_tanks = capture_tanks(5, 300) # produces an array of tanks shown above
+captured_tanks = capture_tanks(5, 300) # an array of captured tanks
 ```
 
 We'll use this function to simulate tank capture and assess two different estimators for the number of tanks.
@@ -90,7 +90,7 @@ since, as the schematic below illustrates, there are $m-1$ choose $k-1$ distinct
 {:.centerr}
 <figure>
     <img src="/images/german_tank_problem/show_formula.png" alt="image" style="width: 75%;">
-    <figcaption>The number of outcomes such that the maximum serial number is $m$ is equal to the number of ways we can select the remaining $k-1$ tanks from the $m-1$ tanks preceding the tank with the  max serial number $m$.</figcaption>
+    <figcaption>We count the number of outcomes such that the maximum serial number is $m$. Obviously, one of the tanks must have serial number $m$. Then, the remaining $k-1$ tanks must have been selected from the $m-1$ tanks preceding the tank with the max serial number $m$. Thus, the number of outcomes such that the max serial number is $m$ is equal to the number of ways to choose $k-1$ tanks from $m-1$.</figcaption>
 </figure>
 
 ### a useful identity from the normalization of the probability mass function
@@ -99,7 +99,7 @@ Since $n \geq m \geq k$:
 
 $$1= \sum_{m=k}^n Pr(M=m|n) = \sum_{m=k}^n \dfrac{\binom{m-1}{k-1}}{\binom{n}{k}}$$
 
-i.e. the probability that $m$ is (inclusive) between $k$ and $m$ is unity. This gives us an identity that we will use later.
+i.e. the probability that $m$ is (inclusive) between $k$ and $m$ is unity. This gives us an identity that we will use later:
 
 $$\binom{n}{k} = \sum_{m=k}^n \binom{m-1}{k-1}$$
 
@@ -127,7 +127,7 @@ To apply our identity above, we use a change of variables in our sum. Define $\t
 
 $$E(M | n) = \dfrac{k}{\binom{n}{k}} \sum_{\tilde{m}=\tilde{k}}^{n+1} \binom{\tilde{m}-1}{\tilde{k}-1}$$
 
-We can now directly invoke our identity:
+We can now directly invoke our identity from the normalization of $Pr(M=m\|n)$:
 
 $$\sum_{\tilde{m}=\tilde{k}}^{n+1} \binom{\tilde{m}-1}{\tilde{k}-1} = \binom{n+1}{\tilde{k}}=\binom{n+1}{k+1}$$
 
@@ -167,7 +167,7 @@ The estimator $\hat{n}$ for the total number of tanks is unbiased. To see this, 
 
 One can also show that the estimator $\hat{n}$ is *efficient* [1], meaning that it exhibits the smallest variance among all other unbiased estimators. 
 
-Another desirable property of an estimator is *consistency*. Loosely, this means the distribution of the estimator will tighten in on the true value of $n$ as $k$ increases. As we capture more tanks (increase $k$), we become more and more likely to correctly estimate $n$. In the extreme case $k=n$, we will of course always correctly estimate $n$. Below, I show the distribution of the estimated number of tanks $\hat{n}$ among 10,000 simulations ($n=100$) for several different values of $k$. Indeed, the distribution narrows in on the true number of tanks, suggesting that this estimator is consistent.
+Another desirable property of an estimator is *consistency*. Loosely, this means the distribution of the estimator will tighten in on the true value of $n$ as $k$ increases. As we capture more tanks (increase $k$), we become more and more likely to correctly estimate $n$. In the extreme case $k=n$, we will of course always correctly estimate $n$. Below, I show the distribution of the estimated number of tanks $\hat{n}$ among 10,000 simulations ($n=100$) for several different values of $k$. Indeed, the distribution narrows in on the true number of tanks as $k$ increases, suggesting that this estimator is consistent. More data makes for a better prediction.
 
 {:.centerr}
 <figure>
@@ -177,9 +177,9 @@ Another desirable property of an estimator is *consistency*. Loosely, this means
 
 # confidence intervals
 
-Our estimate $\hat{n}$ is a *point* estimate. In an *interval* estimate, we desire to give an interval in which the true number of tanks will fall, with a specified confidence. The idea behind "confidence" is as follows. Say the maximum serial number we observed is $m=100$ with a sample size of $k=10$, and consider the hypothesis that the Germans have 10,000 tanks. It could totally be true that we happened to capture only from within the first $100$ tanks of the $10,000$; we cannot disprove it from our sample. However, given that $n=10,000$, it is an unlikely outcome that all $k=10$ tanks were sampled from only the first $100$ of the $10,000$ tanks; it is more likely to have a larger max serial number than $100$ if there were $10,000$ tanks. This gives us some confidence that the Germans have less than $10,000$ tanks.
+Our estimate $\hat{n}$ is a *point* estimate. In an *interval* estimate, we desire to give an interval in which the true number of tanks will fall, with a specified confidence. The idea behind "confidence" is as follows. Say the maximum serial number we observed is $m=100$ with a sample size of $k=10$, and consider the hypothesis that the Germans have $10,000$ tanks. It could totally be true that we happened to capture only from within the first $100$ tanks of the $10,000$; we cannot disprove it from our sample. However, given that $n=10,000$, it is an unlikely outcome that all $k=10$ tanks were sampled from only the first $100$ of the $10,000$ tanks; it is more likely to have a larger max serial number than $100$ if there were $10,000$ tanks. This gives us some confidence that the Germans have *less* than $10,000$ tanks.
 
-The box plots below visualize the distribution of $\hat{n}$ over 100,000 simulations for a series of $n$, simulated using the `capture_tanks` function. The blue horizontal line is the point estimate $\hat{n}$ for $k=10$ and $m=100$. Based on the box plots, which break the distributions into quantiles, we would we see $\hat{n}$ below what we observe with only 25% probability when $n\approx 135$. Thus, based on our observation $m=100$ with $k=10$ captured tanks, we would reject the null hypothesis that $n=135$ at a level of significance of 75%, since it is sufficiently unlikely that the max serial number would be so low (100) if there were truly 135 tanks. Therefore, if $m=100$ and $k=10$, we would say that the number of tanks the Germans have is less than 135 with 75% confidence.
+Here is a computational and conceptually illustrative way to obtain an upper limit on the number of tanks with some confidence. The box plots below visualize the distribution of $\hat{n}$ over 100,000 simulations for a series of $n$, simulated using the `capture_tanks` function. The blue horizontal line is the point estimate $\hat{n}$ for $k=10$ and $m=100$. Based on the box plots, which break the distributions into quantiles, we would we see $\hat{n}$ below what we observe with only 25% probability when $n\approx 135$. Thus, based on our observation $m=100$ with $k=10$ captured tanks, we would reject the null hypothesis that $n=135$ at a level of significance of 75%, since it is sufficiently unlikely that the max serial number would be so low (100) if there were truly 135 tanks. Therefore, if $m=100$ and $k=10$, we would say that the number of tanks the Germans have is less than 135 with 75% confidence.
 
 {:.centerr}
 <figure>
@@ -200,3 +200,5 @@ The box plots below visualize the distribution of $\hat{n}$ over 100,000 simulat
 [2] Ruggles R, Brodie H. An empirical approach to economic intelligence in World War II. Journal of the American Statistical Association. 1947
 
 [3] KC Border's Introduction to Probability and Statistics notes http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture18.pdf
+
+[4] Johnson RW. Estimating the size of a population. Teaching Statistics. 1994 <-- gives nice intuitive arguments
