@@ -17,6 +17,10 @@ This page is dedicated to bragging about the accomplishments of students in our 
 
 Melanie was awarded the Donald F. Othmer Sophomore Academic Excellence Award from the American Institute of Chemical Engineers (AIChE). See [here](https://www.aiche.org/community/awards/donald-f-othmer-sophomore-academic-excellence-award).
 
+![melanie](mel_award.jpg)
+
 # an article about Rachel in iMPACT
 
 A very nice article about Rachel in [iMPACT](http://impact.oregonstate.edu/2019/10/using-mathematical-biology-to-explore-everything-from-ecological-phenomenon-to-cancer-cells/).
+
+![rachel](rachel.jpg)
