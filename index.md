@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Burnt Lake](burnt_lake.jpg)
+![Burnt Lake](burnt_lake.jpg#banner)
 
 <center>
   School of Chemical, Biological, and Environmental Engineering<br>

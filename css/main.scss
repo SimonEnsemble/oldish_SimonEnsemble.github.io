@@ -225,9 +225,16 @@ code {
             }
         }
     }
-    img {
+    img[src*="#banner"] {
         text-align: center;
         width: 100%;
+    }
+    img[src*="#three_fourths_width"] {
+        text-align: center;
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
