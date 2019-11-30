@@ -38,29 +38,29 @@ Fortunately, our toolbox of mathematics, statistical mechanics, and machine lear
 
 # Oregon is awesome
 
-* Oregon is scenic and a great place for hiking, backpacking, camping, biking, rafting, etc. My own photos on [Ello](https://ello.co/cokes) and the Instagram [@outinoregon](https://www.instagram.com/outinoregon/) display some scenery you can encounter in Oregon.
+:evergreen_tree: Oregon is scenic and a great place for hiking, backpacking, camping, biking, rafting, etc. My own photos on [Ello](https://ello.co/cokes) and the Instagram [@outinoregon](https://www.instagram.com/outinoregon/) display some scenery you can encounter in Oregon.
 
-* Mt. Bachelor near Bend and Mt. Hood near Portland offer world-class snowboarding/skiing.
+:mountain: Mt. Bachelor near Bend and Mt. Hood near Portland offer world-class snowboarding/skiing.
 
-* the scenic Oregon coast is just an hour-long drive from Corvallis.
+:ocean: the scenic Oregon coast is just an hour-long drive from Corvallis.
 
-* Corvallis is in the heart of Willamette Valley, known for its Pinot Noir wine. Countless wineries to go wine-tasting with views of vineyards.
+:wine_glass: Corvallis is in the heart of Willamette Valley, known for its Pinot Noir wine. Countless wineries to go wine-tasting with views of vineyards.
 
-* There are several breweries in Corvallis. And an apple cidery.
+:beer: There are several breweries in Corvallis. And an apple cidery.
 
-* Corvallis is [bike-friendly](http://visitcorvallis.com/about-corvallis/corvallis-recognized-as-gold-level-bicycle-friendly-community/) for commuting to work (I bike to the office!) and offers many scenic biking trails.
+:bicyclist: Corvallis is [bike-friendly](http://visitcorvallis.com/about-corvallis/corvallis-recognized-as-gold-level-bicycle-friendly-community/) for commuting to work (I bike to the office!) and offers many scenic biking trails.
 
-* Regarding [climate](https://en.wikipedia.org/wiki/Corvallis,_Oregon#Climate), temperatures are mild year-round in Corvallis. Rain keeps the scenery green and the air clean. The rainy season is romantic!
+:umbrella: Regarding [climate](https://en.wikipedia.org/wiki/Corvallis,_Oregon#Climate), temperatures are mild year-round in Corvallis. Rain keeps the scenery green and the air clean. The rainy season is romantic!
 
-* Enjoy the comforts of small town living in Corvallis: genuinely friendly folks, relatively affordable housing, little traffic, low crime rates, etc. 
+:house_with_garden: Enjoy the comforts of small town living in Corvallis: genuinely friendly folks, relatively affordable housing, little traffic, low crime rates, etc. 
 
-* Live the city life on the weekends; Portland is my favorite city in the US and only a 1.5 hr drive from Corvallis.
+:city_sunset: Live the city life on the weekends; Portland is my favorite city in the US and only a 1.5 hr drive from Corvallis.
 
-* Corvallis is among America's most educated cities [[source](https://www.forbes.com/2008/02/07/americas-smartest-cities-oped-cx_apa_0207smartest_slide_6.html)].
+:books: Corvallis is among America's most educated cities [[source](https://www.forbes.com/2008/02/07/americas-smartest-cities-oped-cx_apa_0207smartest_slide_6.html)].
 
-* We have free public transportation in Corvallis.
+:bus: We have free public transportation in Corvallis.
 
-* No sales tax in Oregon!
+:moneybag: No sales tax in Oregon!
 
 Also see [Why choose OSU?](http://admissions.oregonstate.edu/international/why-choose-osu).
 
