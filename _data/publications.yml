@@ -5,6 +5,15 @@
   url: https://chemrxiv.org/articles/Statistical_Thermodynamic_Model_of_Gas_Adsorption_in_a_Metal-Organic_Framework_Harboring_a_Rotaxane_Molecular_Shuttle/9942095
   image: images/morf_drawing_v_simple.png
 
+- title: Curating metal-organic frameworks to compose robust gas sensor arrays in dilute conditions
+  authors: A. Sturluson, R. Sousa, Y. Zhang, M. T. Huynh, C. Laird, A. H. York, C. Silsby, C. H. Chang, C. Simon
+  journal: ACS Applied Materials &amp; Interfaces
+  date: 2020
+  url: https://doi.org/10.1021/acsami.9b16561
+  other: <a href="https://chemrxiv.org/articles/Curating_Metal-Organic_Frameworks_to_Compose_Robust_Gas_Sensor_Arrays_in_Dilute_Conditions/8179244">preprint</a>.
+  image: images/sensor_arrays.png
+
+
 - title: Understanding Gas Storage in Cuboctahedral Porous Coordination Cages
   authors: G. Lorzing, E. Gosselin, B. Trump, A. H. York, A. Sturluson, C. Rowland, G. P. A. Yap, C. M. Brown, C. Simon, E. D. Bloch
   journal: Journal of the American Chemical Society
@@ -12,19 +21,12 @@
   url: https://doi.org/10.1021/jacs.9b05872
   image: images/Mo_cuboctahedralcage.jpg
 
-- title: Curating metal-organic frameworks to compose robust gas sensor arrays in dilute conditions
-  authors: A. Sturluson, R. Sousa, Y. Zhang, M. T. Huynh, C. Laird, A. H. York, C. Silsby, C. H. Chang, C. Simon
-  journal: ChemRxiv
-  date: 2019
-  url: https://chemrxiv.org/articles/Curating_Metal-Organic_Frameworks_to_Compose_Robust_Gas_Sensor_Arrays_in_Dilute_Conditions/8179244
-  image: images/sensor_arrays.png
-
 - title: The Role of Molecular Modeling and Simulation in the Discovery and Deployment of Metal-Organic Frameworks for Gas Storage and Separation
   authors: A. Sturluson, M. T. Huynh, A. Kaija, C. Laird, S. Yoon, F. Hou, Z. Feng, C. Wilmer, Y. Colon, Y. Chung, D. Siderius, C. Simon
   journal: Molecular Simulation 
   date: 2019
   url: https://www.tandfonline.com/doi/full/10.1080/08927022.2019.1648809
-  other: <a href="https://chemrxiv.org/articles/The_Role_of_Molecular_Modeling_Simulation_in_the_Discovery_and_Deployment_of_Metal-Organic_Frameworks_for_Gas_Storage_and_Separation/7854980">preprint.</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6774364/">open access PMC version</a>
+  other: <a href="https://chemrxiv.org/articles/The_Role_of_Molecular_Modeling_Simulation_in_the_Discovery_and_Deployment_of_Metal-Organic_Frameworks_for_Gas_Storage_and_Separation/7854980">preprint</a>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6774364/">open access PMC version</a>.
   image: images/MOF_schematic_not_pillared.png
 
 - title: Eigencages&#58; Learning a latent space of porous cage molecules
@@ -41,7 +43,7 @@
   date: 2018
   url: https://doi.org/10.1098/rspa.2018.0703
   image: images/balloonsetup.png
-  other: <a href="https://chemrxiv.org/articles/Multi-_and_In-Stabilities_in_Gas_Partitioning_Between_Nanoporous_Materials_and_Rubber_Balloons/7135928">preprint.</a>
+  other: <a href="https://chemrxiv.org/articles/Multi-_and_In-Stabilities_in_Gas_Partitioning_Between_Nanoporous_Materials_and_Rubber_Balloons/7135928">preprint</a>.
 
 - title: High-Throughput Computational Screening of Multivariate Metal-Organic Frameworks (MTV-MOFs) for CO<sub>2</sub> Capture
   authors: S. Li, Y. Chung, C. Simon, R. Snurr
