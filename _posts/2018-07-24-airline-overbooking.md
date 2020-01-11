@@ -109,7 +109,7 @@ ylabel("net revenue")
 
 {:.centerr}
 <figure>
-    <img src="/images/overbooking_boxplot.png" alt="image" style="width: 70%;">
+    <img src="/images/overbooking_boxplot.png" alt="image" style="width: 100%;">
     <figcaption>Box plot showing the spread of net revenue among 10,000 simulated flights depending on the number of tickets sold beyond capacity.
     </figcaption>
 </figure>
