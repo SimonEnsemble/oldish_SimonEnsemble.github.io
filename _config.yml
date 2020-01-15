@@ -7,11 +7,15 @@ subtitle:
 url: https://simonensemble.github.io
 baseurl: ""
 
+description: "the research website of the Simon Ensemble at Oregon State University"
+
 footer_url: "https://simonensemble.github.io"
 footer_text: "The Simon Ensemble"
 
 profile-picture: cage_8.jpg
 favicon_location: assets/favicon.ico
+title_image: cage_8.jpg
+twitter_username: CoryMSimon
 
 permalink: /:year-:month-:day-:title/
 sass:
