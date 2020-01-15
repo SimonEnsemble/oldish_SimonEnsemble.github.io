@@ -14,7 +14,7 @@ footer_text: "The Simon Ensemble"
 
 profile-picture: cage_8.jpg
 favicon_location: assets/favicon.ico
-title_image: cage_8.jpg
+title_image: "https://simonensemble.github.io/cage_8.jpg"
 twitter_username: CoryMSimon
 
 permalink: /:year-:month-:day-:title/
