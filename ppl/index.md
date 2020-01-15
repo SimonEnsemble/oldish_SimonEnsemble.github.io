@@ -27,7 +27,7 @@ Since 2017, Cory is an assistant professor at Oregon State University in the Sch
 
 *Twitter:* [@CoryMSimon](https://twitter.com/CoryMSimon?lang=en)
 
-# the phd students
+# the grad students
 
 {% for phd in site.data.phds %}
 <img class="profile-picture" src="{{ phd.foto }}">
