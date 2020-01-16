@@ -40,7 +40,7 @@ We use machine learning algorithms to predict the adsorption properties of nano-
 
 <figure>
     <center>
-    <img src="images/eigencages.jpeg" alt="" style="width:550px">
+    <img src="images/eigencages.jpeg" width="550" class="responsive">
     </center>
 </figure>
 
@@ -52,7 +52,7 @@ We also use molecular models and simulations of gas adsorption to identify the m
 
 <figure>
     <center>
-    <img src="images/cages_filling_with_gas.png" alt="" style="width:600px">
+    <img src="images/cages_filling_with_gas.png" width="650" class="responsive">
     </center>
 </figure>
 
@@ -65,7 +65,7 @@ We develop statistical and mathematical models of gas sensor arrays to
 
 <figure>
     <center>
-    <img src="pubs/images/sensor_arrays.png" alt="" style="width:350px">
+    <img src="pubs/images/sensor_arrays.png" width="375" class="responsive">
     </center>
 </figure>
 
@@ -76,6 +76,6 @@ Our goal is to reveal insights into the adsorption properties of such MOFs and u
 
 <figure>
     <center>
-    <img src="pubs/images/morf_drawing_v_simple.png" alt="" style="width:350px">
+    <img src="pubs/images/morf_drawing_v_simple.png" width="350" class="responsive">
     </center>
 </figure>

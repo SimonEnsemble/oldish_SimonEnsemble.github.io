@@ -10,6 +10,12 @@ figcaption {
     text-align: center;
 }
 
+// Cory's for responsive images that adjust with screen size
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 // Customization Variables
 
 $accent: #FF0F00;
