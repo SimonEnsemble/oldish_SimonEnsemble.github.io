@@ -10,7 +10,7 @@ Liquid continuously flows into a truncated square pyramidal tank at a rate $q_i=
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/tank_1.png" alt="image" style="width: 50%;">
+    <img src="/images/tank_problem/tank_1.png" alt="image" style="width: 70%;">
 </figure>
 
 The goal here is to derive a dynamic model for the liquid level $h=h(t)$ given any input $q_i(t)$. The outlet flow rate then follows as $c\sqrt{h(t)}$. The proportionality constant $c$ is a characteristic of the liquid in the tank and the geometry of the exit line; it can be measured experimentally.
@@ -28,7 +28,7 @@ Consider when the liquid level changes by a differential length $dh$. This corre
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/helicopterview.png" alt="image" style="width: 50%;">
+    <img src="/images/tank_problem/helicopterview.png" alt="image" style="width: 70%;">
 </figure>
 
 Therefore, a more helpful volume balance is:
@@ -42,7 +42,7 @@ A little more about our truncated square pyramidal tank. The view from all four 
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/tank_3.png" alt="image" style="width: 30%;">
+    <img src="/images/tank_problem/tank_3.png" alt="image" style="width: 50%;">
 </figure>
 
 
@@ -50,21 +50,21 @@ If we define $w=w(h)$ [m] to be the length of the line that the top of the liqui
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/tank_2.png" alt="image" style="width: 30%;">
+    <img src="/images/tank_problem/tank_2.png" alt="image" style="width: 50%;">
 </figure>
 
 We can relate $w$ to the liquid level $h$, height of the tank $H$, and lengths of the bases $L_t$ and $L_b$ if we draw some right triangles. We bring in $L_t$ and write $w=L_t+2\theta$ with $\theta$ depicted below.
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/tank_4.png" alt="image" style="width: 30%;">
+    <img src="/images/tank_problem/tank_4.png" alt="image" style="width: 50%;">
 </figure>
 
 To determine $\theta$, we recognize two similar right triangles. At the bottom base, we decompose $L_b$ into $L_t$ plus $L_b-L_t$; half of the latter must be the base of the largest right triangle we drew. The smaller right triangle has a height of the tank $H$ minus that of the liquid $h$.
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/tank_5.png" alt="image" style="width: 50%;">
+    <img src="/images/tank_problem/tank_5.png" alt="image" style="width: 70%;">
 </figure>
 
 Because the triangles are similar, the ratio of the lengths of their two sides are equal:
@@ -145,7 +145,7 @@ plot(t, h, lw=3, color="orange")
 
 {:.centerr}
 <figure>
-    <img src="/images/tank_problem/numerical_soln.png" alt="image" style="width: 50%;">
+    <img src="/images/tank_problem/numerical_soln.png" alt="image" style="width: 100%;">
 </figure>
 
 The plot above shows the resulting $h(t)$. The horizontal dashed line denotes the tank height $H$. Despite constant flow into the tank, the liquid does not overflow the tank since, if the tank is completely filled ($h=H$), hydrostatic pressure at the bottom drives flow out of the tank faster than the incoming flow rate $q_i$. The liquid level reaches a steady state $\bar{h}$ when the flow rate of liquid into the tank balances the rate at which hydrostatic pressure drives liquid out of the tank:
