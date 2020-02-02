@@ -31,9 +31,12 @@ A very nice article about Rachel in [iMPACT](http://impact.oregonstate.edu/2019/
 
 ![rachel](rachel.jpg#three_fourths_width)
 
+# Kaggle Tweets our airline overbooking post
+
+Kaggle, the world's largest community of data scientists, [Tweeted](https://twitter.com/kaggle/status/1027596667837734912) our blog post on the simulation of airline overbooking. This project was for the Summer Experience for Science and Engineering Youth ([SESEY](https://cbee.oregonstate.edu/sesey)) program.
+
 # OSU News covers our eigencages paper
 
 <img src="https://today.oregonstate.edu/sites/today.oregonstate.edu/files/porous_organic_cage_.png" width=400>
 
 see [here](https://today.oregonstate.edu/news/machine-learning-research-osu-unlocking-molecular-cages%E2%80%99-energy-saving-potential).
-
