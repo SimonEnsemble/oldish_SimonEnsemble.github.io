@@ -6,6 +6,12 @@ layout: default
 
 This page is dedicated to bragging about the accomplishments of students in our research ensemble!
 
+# OSU News covers our sensor array paper
+
+<img src="https://today.oregonstate.edu/sites/today.oregonstate.edu/files/sensor_graphic.jpg" width=400>
+
+see [here](https://today.oregonstate.edu/news/research-zeroing-electronic-nose-monitoring-air-quality-diagnosing-disease). Arni and Melanie made the cool sensor array image using Blender.
+
 # Arni, Melanie present at the national AIChE conference in Orlando
 
 > pics or it didn't happen -unknown
@@ -24,3 +30,10 @@ Melanie was awarded the Donald F. Othmer Sophomore Academic Excellence Award fro
 A very nice article about Rachel in [iMPACT](http://impact.oregonstate.edu/2019/10/using-mathematical-biology-to-explore-everything-from-ecological-phenomenon-to-cancer-cells/).
 
 ![rachel](rachel.jpg#three_fourths_width)
+
+# OSU News covers our eigencages paper
+
+<img src="https://today.oregonstate.edu/sites/today.oregonstate.edu/files/porous_organic_cage_.png" width=400>
+
+see [here](https://today.oregonstate.edu/news/machine-learning-research-osu-unlocking-molecular-cages%E2%80%99-energy-saving-potential).
+
