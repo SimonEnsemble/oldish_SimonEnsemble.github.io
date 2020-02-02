@@ -8,7 +8,7 @@ This page is dedicated to bragging about the accomplishments of students in our 
 
 # OSU News covers our sensor array paper
 
-<img src="https://today.oregonstate.edu/sites/today.oregonstate.edu/files/sensor_graphic.jpg" width=400>
+<img src="../images/sensor_graphic.jpg" width=400>
 
 see [here](https://today.oregonstate.edu/news/research-zeroing-electronic-nose-monitoring-air-quality-diagnosing-disease). Arni and Melanie made the cool sensor array image using Blender.
 
@@ -37,6 +37,6 @@ Kaggle, the world's largest community of data scientists, [Tweeted](https://twit
 
 # OSU News covers our eigencages paper
 
-<img src="https://today.oregonstate.edu/sites/today.oregonstate.edu/files/porous_organic_cage_.png" width=400>
+<img src="../images/porous_organic_cage_.png" width=400>
 
 see [here](https://today.oregonstate.edu/news/machine-learning-research-osu-unlocking-molecular-cages%E2%80%99-energy-saving-potential).
