@@ -6,6 +6,12 @@ layout: default
 
 This page is dedicated to bragging about the accomplishments of students in our research ensemble!
 
+# Arthur selected for the RISE Germany program
+
+Arthur Henry York was selected for [RISE (Research Internships in Science and Engineering) Germany](https://www.daad.de/rise/en/rise-germany/))! Congratulations, Arthur! 
+
+![arthur](../ppl/photos/ArthurHenryYork.JPG#three_fourths_width)
+
 # OSU News covers our sensor array paper
 
 ![sensor](sensor_graphic.jpg#three_fourths_width)
