@@ -14,7 +14,7 @@ Rachel Sousa was accepted to and offered full funding for the Mathematical, Comp
 
 # Arthur selected for the RISE Germany program
 
-Arthur Henry York was selected for [RISE (Research Internships in Science and Engineering) Germany](https://www.daad.de/rise/en/rise-germany/))! Congratulations, Arthur! 
+Arthur Henry York was selected for [RISE (Research Internships in Science and Engineering) Germany](https://www.daad.de/rise/en/rise-germany/)! Congratulations, Arthur! 
 
 ![arthur](../ppl/photos/ArthurHenryYork.JPG#three_fourths_width)
 
