@@ -1,3 +1,10 @@
+- title: An upper bound to gas storage and delivery via pressure-swing adsorption in porous materials
+  authors: J. Pommerenck, C. Simon, D. Roundy
+  journal: arXiv
+  date: 2020
+  url: https://arxiv.org/abs/2006.01886
+  image: images/g_st.png
+
 - title: Message passing neural networks for partial charge assignment to metal-organic frameworks
   authors: A. Raza, A. Sturluson, C. Simon, X. Fern
   journal: ChemRxiv
