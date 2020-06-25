@@ -15,7 +15,7 @@ layout: default
 
 <img class="profile-picture" src="photos/cory.jpg">
 
-**Cory Simon** hails from a small town in Ohio. He earned his B.S. in Chemical Engineering from the University of Akron. He then studied mathematics at the University of British Columbia in Vancouver, Canada for two years. In 2016, he earned his Ph.D. in Chemical Engineering from the University of California, Berkeley.
+**Cory Simon** ([CV](CorySimon_academic_CV.pdf)) hails from a small town in Ohio. He earned his B.S. in Chemical Engineering from the University of Akron. He then studied mathematics at the University of British Columbia in Vancouver, Canada for two years. In 2016, he earned his Ph.D. in Chemical Engineering from the University of California, Berkeley.
 
 He conducted scientific research at Virginia Tech, Okinawa Institute of Science and Technology, Lawrence Berkeley National Laboratory, École Polytechnique Fédérale de Lausanne, and Altius Institute for Biomedical Sciences and interned in industry at Bridgestone Research (chemical engineering) and Stitch Fix (data science).
 
