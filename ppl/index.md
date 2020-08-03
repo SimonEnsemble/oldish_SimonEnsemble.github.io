@@ -54,8 +54,9 @@ Since 2017, Cory is an assistant professor at Oregon State University in the Sch
 
 {% endfor %}
 
-# collaborators
+# alumni
 
-{% for collab in site.data.collabs%}
-{{ collab.name }}. *{{ collab.org }}*. <a href="{{ collab.web }}">website</a>.
+{% for alum in site.data.alumni %}
+**{{ alum.name }}**. *{{ alum.info }}*.
+
 {% endfor %}
