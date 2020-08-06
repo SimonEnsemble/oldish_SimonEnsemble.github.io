@@ -7,9 +7,10 @@
 
 - title: Message passing neural networks for partial charge assignment to metal-organic frameworks
   authors: A. Raza, A. Sturluson, C. Simon, X. Fern
-  journal: ChemRxiv
+  journal: Journal of Physical Chemistry C
   date: 2020
-  url: https://chemrxiv.org/articles/Message_Passing_Neural_Networks_for_Partial_Charge_Assignment_to_Metal-Organic_Frameworks/12298487
+  url: https://doi.org/10.1021/acs.jpcc.0c04903
+  other: <a href="https://chemrxiv.org/articles/Message_Passing_Neural_Networks_for_Partial_Charge_Assignment_to_Metal-Organic_Frameworks/12298487">preprint</a>.
   image: images/mpnn.png
   
 - title: The SIR dynamic model of infectious disease transmission and its analogy with chemical kinetics
